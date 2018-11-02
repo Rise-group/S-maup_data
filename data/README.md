@@ -27,6 +27,23 @@ This work presents a nonparametric statistical test, S-maup, to measure the sens
 [<span style="color:red">Download the code</span>](data/results.csv)
 
 
+```tex
+@article{XX,
+    author = {Duque, Juan C. AND Laniado, H. AND Polo, A.},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {S-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem},
+    year = {2018},
+    month = {mm},
+    volume = {vv},
+    url = {xx},
+    pages = {1-25},
+    abstract = {This work presents a nonparametric statistical test,  S-maup, to measure the sensitivity of a spatially intensive variable to the effects of the Modifiable Areal Unit Problem (MAUP). To the best of our knowledge,  S-maup is the first statistic of its type and focuses on determining how much the distribution of the variable, at its highest level of spatial disaggregation, will change when it is spatially aggregated. Through a computational experiment, we obtain the basis for the design of the statistical test under the null hypothesis of non-sensitivity to MAUP. We performed an exhaustive simulation study for approaching the empirical distribution of the statistical test, obtaining its critical values, and computing its power and size. The results indicate that, in general, both the statistical size and power improve with increasing sample size. Finally, for illustrative purposes, an empirical application is made using the Mincer equation in South Africa, where starting from 206 municipalities, the  SS -maup statistic is used to find the maximum level of spatial aggregation that avoids the negative consequences of the MAUP.},
+    number = {nn},
+    doi = {xx}
+}
+```
+
 
 ```python
 import smaup as smaup
@@ -91,7 +108,7 @@ Fields description:
 
 [<span style="color:red">code</span>](data/results.csv)
 
-[data](1_SAR_realizations)
+[data](https://www.dropbox.com/sh/ns8s59b2bkx2ypr/AABwzjdBzD33yFw6-2amEH5Va?dl=0)
 
 ### Table 3. Critical Values ($M_{\alpha;\rho, N}$).
 
