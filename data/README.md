@@ -1,4 +1,3 @@
-
 <img src="figs/rise_logo.png" alt="Estructura Carpeta" align="center">
 
 ## S-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem
@@ -22,11 +21,6 @@ __Corresponding author__ = jduquec1@eafit.edu.co (JCD)
 
 This work presents a nonparametric statistical test, S-maup, to measure the sensitivity of a spatially intensive variable to the effects of the Modifiable Areal Unit Problem (MAUP). To the best of our knowledge, S-maup is the first statistic of its type and focuses on determining how much the distribution of the variable, at its highest level of spatial disaggregation, will change when it is spatially aggregated.  Through a computational experiment, we obtain the basis for the design of the statistical test under the null hypothesis of non-sensitivity to MAUP.  We performed an exhaustive simulation study for approaching the empirical distribution of the statistical test, obtaining its critical values, and computing its power and size. The results indicate that, in general, both the statistical size and power improve with increasing sample size. Finally, for illustrative purposes, an empirical application is made using the Mincer equation in South Africa, where starting from 206 municipalities, the $S$-maup statistic is used to find the maximum level of spatial aggregation that avoids the negative consequences of the MAUP.
 
-# Run the S-maup.
-
-[<span style="color:red">Download the code</span>](data/results.csv)
-
-
 ```tex
 @article{XX,
     author = {Duque, Juan C. AND Laniado, H. AND Polo, A.},
@@ -44,182 +38,107 @@ This work presents a nonparametric statistical test, S-maup, to measure the sens
 }
 ```
 
-
-```python
-import smaup as smaup
-```
-
-
-```python
-N = 150
-k = 90
-rhoEst = 0.801
-testSmaup(N, k, rhoEst)
-```
-
 # Computational Experiment on MAUP effects
 
 <img src="figs/scheme.png" alt="Estructura Carpeta" align="center">
 
-
 ## Folder: <span style="color:red">1_SAR_realizations</span>
-
-Fields description:
 
 **Variable name** | **Description**
   ----------------- | -------------------------------------------------------------------------
-  `ID`       | Area ID
-  `SAR<realization ID>_<rho value>`      | SAR instances: SAR1_0.9, SAR2_0.9, SAR3_0.9,..., SAR50_0.9,..., SAR1_-0.9, SAR2_-0.9, SAR3_-0.9,..., SAR48_-0.9, SAR49_-0.9, SAR50_-0.9
-
-
-
-
-
-
-
-
-```python
-#ir a folder
-```
-
-
-```python
-# leer un csv
-```
-
-
-```python
-# visualizar primeros registros
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-# Tables:
-
-### Table 2. Effect on mean.
-
-[<span style="color:red">code</span>](data/results.csv)
-
-[data](https://www.dropbox.com/sh/ns8s59b2bkx2ypr/AABwzjdBzD33yFw6-2amEH5Va?dl=0){:target="_blank"}
-
-<a href="https://www.dropbox.com/sh/ns8s59b2bkx2ypr/AABwzjdBzD33yFw6-2amEH5Va?dl=0" target="_blank">data2</a>
-
-### Table 3. Critical Values ($M_{\alpha;\rho, N}$).
-
-
-```python
-
-```
-
-### Table 4. Example $S$-maup.
-
-
-```python
-
-```
-
-### Table 5. Estimated power of $S$-maup.
-
-
-```python
-
-```
-
-### Table 6. Estimated size of $S$-maup.
-
-
-```python
-
-```
-
-### Table 7. Descriptive Statistics.
-
-
-```python
-
-```
-
-### Table 8. Mincer Model Estimate: South Africa.
-
-
-```python
-
-```
-
-### Table 9. Estimator of the statistic $S$-maup: South Africa.
-
-
-```python
-
-```
-
-# Figures:
-
-### Figure 3. Relative change in mean - Average effect. (a) $N=25$; (b) $N=100$; (c) $N=225$; (d) $N=400$; (e) $N=625$; (f) $N=900$.
-
-
-```python
-
-```
-
-### Figure 4. Relative change in variance - Average effect. (a) $N=25$; (b) $N=100$; (c) $N=225$; (d) $N=400$; (e) $N=625$; (f) $N=900$.
-
-
-```python
-
-```
-
-### Figure 5. Proportion of instances for which the Levene test rejects the null hypothesis of equality of variance, with a level of significance $\alpha=0.05$. (a) $N=25$; (b) $N=100$; (c) $N=225$; (d) $N=400$; (e) $N=625$; (f) $N=900$.    
-
-
-```python
-
-```
-
-### Figure 6. MAUP effects at three levels of spatial autocorrelation, (a) $\rho=-0.9$, (b) $\rho=0$, and (c) $\rho=0.9$. Solid line: original variable with $N=900$; dashed lines: 30 aggregations with $k=240$. The vertical lines indicate $\mu_{o}$ and $\mu_{ag}$.
-
-
-```python
-
-```
-
-### Figure 7. Median $\overline{RCM}$ for $N=100$.
-
-
-```python
-
-```
-
-### Figure 8. Adjustments of robust linear regression models: (a) Linearized logistic function ($L$); (b) Linearized power function ($\eta$); (c) Linear function ($\tau$).
-
-
-```python
-
-```
-
-### Figure 9. Municipalities: (a), (b) and (c). Districts: (d), (e) and (f). Provinces:(g), (h) and (i).
-
-
-```python
-
-```
-
-### Figure 10. Distribution of coefficients, $k=136$: (a) YRSCHOOL; (b) EXP; (c) EXP2. horizontal black line: coefficient (206 municipalities), dashed lines are the respective confidence intervals 95\%.
-
-
-```python
-
-```
-
-### Figure 11. Distribution of coefficients. line:$k=136$, dotted line:$k=52$: (a) YRSCHOOL; (b) EXP; (c) EXP2. horizontal black line: coefficient (206 municipalities). horizontal dotted line: coefficient (52 districts).
+  `ID`       | `Area ID`
+  `SAR1_0.9`      | `First realization of a SAR process with rho = 0.9`
+  `SAR2_0.9`      | `Second realization of a SAR process with rho = 0.9`
+  `...`      | `...`
+  `SAR50_0.9`      | `50th realization of a SAR process with rho = 0.9`
+  `...`      | `...`
+  `...`      | `...`
+  `SAR1_-0.9`      | `First realization of a SAR process with rho = -0.9`
+  `SAR2_-0.9`      | `Second realization of a SAR process with rho = -0.9`
+  `...`      | `...`
+  `SAR50_-0.9`      | `50th realization of a SAR process with rho = -0.9`
+
+`NOTE: There is a .csv and a shapefile for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas`   
+
+### [Go to folder 1_SAR_realizations](1_SAR_realizations)
+
+## Folder: <span style="color:red">2_Spatial_aggregations</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 2_Spatial_aggregations](2_Spatial_aggregations)
+
+## Folder: <span style="color:red">3_MAUP_effects</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 3_MAUP_effects](3_MAUP_effects)
+
+## Folder: <span style="color:red">4_t_tests</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 4_t_tests](4_t_tests)
 
 
 ```python
