@@ -110,6 +110,9 @@ Fields description:
 
 [data](https://www.dropbox.com/sh/ns8s59b2bkx2ypr/AABwzjdBzD33yFw6-2amEH5Va?dl=0)
 
+
+<a href="https://www.dropbox.com/sh/ns8s59b2bkx2ypr/AABwzjdBzD33yFw6-2amEH5Va?dl=0" target="_blank">data2</a>
+
 ### Table 3. Critical Values ($M_{\alpha;\rho, N}$).
 
 
