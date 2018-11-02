@@ -1,5 +1,5 @@
 
-<img src="figs/rise_logo.png" alt="Estructura Carpeta" width="300" height="300" align="left">
+<img src="figs/rise_logo.png" alt="Estructura Carpeta" width="400" height="200" align="center">
 
 ## $S$-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem
 
@@ -52,6 +52,22 @@ Fields description:
 ID: Area ID
 
 SAR$<$realization ID$>$_$<rho$ value$>$
+
+Table 1. English indices of deprivation variables.
+
+  **Variable name** | **Description**
+  ----------------- | -------------------------------------------------------------------------
+  `imd\_rank`       | Rank according the Index of Multiple Deprivation
+  `imd\_score`      | Score of the Index of Multiple Deprivation
+  `income`          | Score of the Income Deprivation domain of the IMD
+  `employment`      | Score of the Employment Deprivation domain of the IMD
+  `education`       | Score of the Education, Skills & Training Deprivation domain of the IMD
+  `health`          | Score of the Health Deprivation & Disability domain of the IMD
+  `crime`           | Score of the Crime domain of the IMD
+  `housing`         | Score of the Barriers to Housing & Services domain of the IMD
+  `living-env`      | Score of the Living Environment Deprivation domain of the IMD
+  `idaci`           | Score of the Income Deprivation Affecting Children Index
+  `idaopi`          | Score of the Income Deprivation Affecting Older People Index
 
 
 
