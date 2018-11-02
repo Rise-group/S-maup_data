@@ -1,4 +1,4 @@
-<img src="figs/rise_logo.png" alt="Estructura Carpeta" align="center">
+<img src="data/figs/rise_logo.png" alt="Estructura Carpeta" align="center">
 
 ## S-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem
 
