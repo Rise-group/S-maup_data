@@ -1,8 +1,4 @@
-# S-maup_data
-This repository contains all data files required to reproduce the analysis in the paper "S-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem", by Juanca Duque, Henry Laniado and Adriano Polo
-
-
-<img src="figs/rise_logo.png" alt="Estructura Carpeta" width="300" height="300" align="left">
+<img src="figs/rise_logo.png" alt="Estructura Carpeta" align="center">
 
 ## S-maup: Statistical Test to Measure the Sensitivity to the Modifiable Areal Unit Problem
 
