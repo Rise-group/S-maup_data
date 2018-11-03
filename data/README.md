@@ -47,16 +47,16 @@ This work presents a nonparametric statistical test, S-maup, to measure the sens
 **Variable name** | **Description**
   ----------------- | -------------------------------------------------------------------------
   `ID`       | `Area ID`
-  `SAR1_0.9`      | `First realization of a SAR process with rho = 0.9`
-  `SAR2_0.9`      | `Second realization of a SAR process with rho = 0.9`
+  `SAR1_0.9`      | First realization of a SAR process with rho `= 0.9`
+  `SAR2_0.9`      | Second realization of a SAR process with rho `= 0.9`
   `...`      | `...`
-  `SAR50_0.9`      | `50th realization of a SAR process with rho = 0.9`
+  `SAR50_0.9`      | 50th realization of a SAR process with rho `= 0.9`
   `...`      | `...`
   `...`      | `...`
-  `SAR1_-0.9`      | `First realization of a SAR process with rho = -0.9`
-  `SAR2_-0.9`      | `Second realization of a SAR process with rho = -0.9`
+  `SAR1_-0.9`      | First realization of a SAR process with rho `= -0.9`
+  `SAR2_-0.9`      | Second realization of a SAR process with rho `= -0.9`
   `...`      | `...`
-  `SAR50_-0.9`      | `50th realization of a SAR process with rho = -0.9`
+  `SAR50_-0.9`      | 50th realization of a SAR process with rho `= -0.9`
 
 `NOTE: There is a .csv and a shapefile for each value on N (number of areas)
 5  : lattice of 5x5 = 25 areas,
