@@ -42,6 +42,22 @@ This work presents a nonparametric statistical test, S-maup, to measure the sens
 
 <img src="figs/scheme.png" alt="Estructura Carpeta" align="center">
 
+**Folder** | **Table** | **Figure**
+  ----------------- | ---------------------------- | -----------------------------------------------
+  [1_SAR_realizations](1_SAR_realizations)| - |-
+  [2_Spatial_aggregations](2_Spatial_aggregations)| - |-
+  [3_MAUP_effects](3_MAUP_effects)|-  | Figure 3, Figure 4
+  [4_t_tests](4_t_tests)| Table 2 |-
+  [5_Levene_tests](5_Levene_tests)| - | Figure 5
+  [6_median_RCM](6_median_RCM)| - | Figure 7
+  [7_Adjustments_of_robust_linear_regression_models](7_Adjustments_of_robust_linear_regression_models)|- | Figure 8
+  [8_critical values](8_critical values)| Table 3  |-
+  [9_power](9_power)| Table 5 |-
+  [10_size](10_size)| Table 6 |-
+  [11_application](11_application)| Table 7, Table 8, Table 9 |Figure 9, Figure 10, Figure 11
+
+
+
 ## Folder: <span style="color:red">1_SAR_realizations</span>
 
 **Variable name** | **Description**
@@ -140,7 +156,176 @@ This work presents a nonparametric statistical test, S-maup, to measure the sens
 
 ### [Go to folder 4_t_tests](4_t_tests)
 
+## Folder: <span style="color:red">5_Levene_tests</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 5_Levene_tests](5_Levene_tests)
+
+## Folder: <span style="color:red">6_median_RCM</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 6_median_RCM](6_median_RCM)
+
+## Folder: <span style="color:red">7_Adjustments_of_robust_linear_regression_models</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 7_Adjustments_of_robust_linear_regression_models](7_Adjustments_of_robust_linear_regression_models)
+
+## Folder: <span style="color:red">8_critical values</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 8_critical values](8_critical values)
+
+## Folder: <span style="color:red">9_power</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 9_power](9_power)
+
+## Folder: <span style="color:red">10_size</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 10_size](10_size)
+
+## Folder: <span style="color:red">11_application</span>
+
+**SAR realization** | **Regions IDs**     | **Description**
+  ----------------- | -------------------------|---------------------------------------------------
+  `SAR1_0.9_22`       | `[16,13,...,10]`   |`r = 1st random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 16, areas 1 is assigned to region ID 13,..., area 24 is assigned to region ID 10.` 
+  `SAR1_0.9_22`       | `[1,5,...,3]`   |`r = 2nd random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions. The list contains the ID of the regions for each area; i.e., area 0 is assigned to region ID 1, areas 1 is assigned to region ID 5,..., area 24 is assigned to region ID 3.`
+  `...`       | `...`   |`...`
+  `SAR1_0.9_22`       | `[5,9,...,17]`   |`r = 29th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `SAR1_0.9_22`       | `[3,6,...,1]`   |`r = 30th random spatial aggregation of the first realization of a SAR process (SAR1), with rho = 0.9, into k = 22 regions.`
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,5,...,3]`   |`r = 1st random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  `...`       | `...`   |`...`
+  `SAR50_-0.9_10`       | `[5,6,...,2]`   |`r = 30th random spatial aggregation of the 50th realization of a SAR process (SAR50), with rho = -0.9, into k = 10 regions.` 
+  
+`NOTE: There is a .csv for each value on N (number of areas)
+5  : lattice of 5x5 = 25 areas,
+10 : lattice of 10x10 = 100 areas, 
+15 : lattice of 15x15 = 225 areas, 
+20 : lattice of 20x20 = 400 areas, 
+25 : lattice of 25x25 = 625 areas, 
+30 : lattice of 30x30 = 900 areas` 
+
+### [Go to folder 11_application](11_application)
+
 
 ```python
 
 ```
+
