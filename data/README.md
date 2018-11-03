@@ -30,7 +30,7 @@ __Corresponding author__ = jduquec1@eafit.edu.co (JCD)
   [5_Levene_tests](5_Levene_tests)| - | Figure 5
   [6_median_RCM](6_median_RCM)| - | Figure 7
   [7_Adjustments_of_robust_linear_regression_models](7_Adjustments_of_robust_linear_regression_models)|- | Figure 8
-  [8_critical values](8_critical values)| Table 3  |-
+  [8_critical_values](8_critical_values)| Table 3  |-
   [9_power](9_power)| Table 5 |-
   [10_size](10_size)| Table 6 |-
   [11_application](11_application)| Table 7, Table 8, Table 9 |Figure 9, Figure 10, Figure 11
