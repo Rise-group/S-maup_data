@@ -27,12 +27,12 @@ __Corresponding author__ = jduquec1@eafit.edu.co (JCD)
   [2_Spatial_aggregations](2_Spatial_aggregations)| - |-
   [3_MAUP_effects](3_MAUP_effects)|-  | Figure 3, Figure 4
   [4_t_tests_and_Levene_tests](4_t_tests)| Table 2 | Figure 5
-  [5_median_RCB_bar](6_median_RCV_bar)| - | Figure 7
-  [6_Adjustments_of_robust_linear_regression_models](7_Adjustments_of_robust_linear_regression_models)|- | Figure 8
-  [7_critical values](8_critical values)| Table 3  |-
-  [8_power](9_power)| Table 5 |-
-  [9_size](10_size)| Table 6 |-
-  [10_application](11_application)| Table 7, Table 8, Table 9 |Figure 9, Figure 10, Figure 11
+  [5_median_RCB_bar](5_median_RCV_bar)| - | Figure 7
+  [6_Adjustments_of_robust_linear_regression_models](6_Adjustments_of_robust_linear_regression_models)|- | Figure 8
+  [7_critical_values](7_critical_values)| Table 3  |-
+  [8_power](8_power)| Table 5 |-
+  [9_size](9_size)| Table 6 |-
+  [10_application](10_application)| Table 7, Table 8, Table 9 |Figure 9, Figure 10, Figure 11
 
 
 
