@@ -186,7 +186,7 @@ Dictionary of Variables:
   `pVal_levene`      | `pValue for the Levene test`
   `reject_levene`      | `1: the Levene test was rejected`
 
-### [Go to folder 4_t_tests_and_Levene_tests](4_t_tests)
+### [Go to folder 4_t_tests_and_Levene_tests](4_t_tests_Levene_tests)
 
 ## Folder: <span style="color:red">5_median_RCV_bar</span>
 
