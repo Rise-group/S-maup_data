@@ -117,7 +117,7 @@ File Names:
 
 `RCM_RCV.csv`: Relative change in the mean (RCM) and relative change in the variance (RCV). Eq(1) and Eq(2).
 
-`RCM_bar_RCB_bar.csv`: mean RCM and mean RCV. Eq(3) and Eq(4).
+`RCM_bar_RCV_bar.csv`: mean RCM and mean RCV. Eq(3) and Eq(4).
 
 
 `NOTE:`
