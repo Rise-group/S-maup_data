@@ -27,7 +27,7 @@ __Corresponding author__ = jduquec1@eafit.edu.co (JCD)
   [2_Spatial_aggregations](2_Spatial_aggregations)| - |-
   [3_MAUP_effects](3_MAUP_effects)|-  | Figure 3, Figure 4
   [4_t_tests_and_Levene_tests](4_t_tests_Levene_tests)| Table 2 | Figure 5
-  [5_median_RCB_bar](5_median_RCV_bar)| - | Figure 7
+  [5_median_RCV_bar](5_median_RCV_bar)| - | Figure 7
   [6_Adjustments_of_robust_linear_regression_models](6_Adjustments_of_robust_linear_regression_models)|- | Figure 8
   [7_critical_values](7_critical_values)| Table 3  |-
   [8_power](8_power)| Table 5 |-
@@ -146,9 +146,9 @@ Dictionary of Variables:
   `Var_ag`      | `Variance of the aggregatedvariable (\sigma_{ag}^{2})`
   `RCM`      | `Relative change in the mean (RCM). Eg(1)`
   `RCV`      | `Relative change in the variance (RCV). Eq(2)`
-  `NameNew`      | `Variable name in file RCM_bar_RCB_bar.csv`
+  `NameNew`      | `Variable name in file RCM_bar_RCV_bar.csv`
   
-`RCM_bar_RCB_bar.csv`:
+`RCM_bar_RCV_bar.csv`:
 
 **Variable name** | **Description**
   ----------------- | -------------------------------------------------------------------------
@@ -263,7 +263,7 @@ File Names:
 
 There is one folder per each value of N. Inside those folders there are files of the type:
 
-`MainTable_<N>_<RhoReference>.csv` taht contains the S-maup for the 1,000 instances descrived in the first paragraph of section "Critical values and p-value" 
+`MainTable_<N>_<RhoReference>.csv` that contains the S-maup for the 1,000 instances descrived in the first paragraph of section "Critical values and p-value" 
 
 Where:
 
