@@ -302,7 +302,7 @@ Dictionary of Variables:
   
 
 
-### [Go to folder 7_critical values](7_critical values)
+### [Go to folder 7_critical values](7_critical_values)
 
 ## Folder: <span style="color:red">8_power</span>
 
