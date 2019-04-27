@@ -83,7 +83,7 @@ def testSmaup(N, k, rhoEst):
     Crit_val0_10 = interp1d(CV0_10[0,1:], CV0_10[CV0_10[:,0] == r,1:])
     
     print("====================================")
-    print("Estadístico M = ",Smaup)
+    print("Statistic M = ",Smaup)
     if Smaup > Crit_val0_01(N):
         print("Pseudo p-value < 0.01 ***")
         print("H0 is rejected")
