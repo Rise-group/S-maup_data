@@ -1,4 +1,4 @@
-<img src="data/figs/rise_logo.png" alt="Estructura Carpeta" align="center">
+<img src="../data/figs/rise_logo.png" alt="Estructura Carpeta" align="center">
 
 ## Run the S-maup Test in different programming languages
 
@@ -32,37 +32,37 @@ Download the S-maup test in different languages! (Matlab, R and Python)
 
 ### Matlab Users
 
->> N = 25
->> k = 10
->> rhoEst = 0.8
->> Smaup = testSmaup(N, k, rhoEst)   %%%Atlernative: Smaup = testSmaup(N, k, rhoEst)
-==========================
-Estadistico M =0.12191
-Pseudo p_value > 0.10 
-H0 is not rejected
-==========================
+	>> N = 25
+	>> k = 10
+	>> rhoEst = 0.8
+	>> Smaup = testSmaup(N, k, rhoEst)   %%%Atlernative: Smaup = testSmaup(N, k, rhoEst)
+	==========================
+	Estadistico M =0.12191
+	Pseudo p_value > 0.10 
+	H0 is not rejected
+	==========================
 
 ### R Users
    			   
-> N <- 865
-> k <- 90
-> rhoEst <- 0.801
-> Smaup <- testSmaup(N, k, rhoEst)   ### Alternative: Smaup <- testSmaup(865, 90, 0.801)
-================================
-Statistic M = 0.366546071907841 
-Pseudo p_value < 0.05 **
-H0 is rejected
-================================
+	> N <- 865
+	> k <- 90
+	> rhoEst <- 0.801
+	> Smaup <- testSmaup(N, k, rhoEst)   ### Alternative: Smaup <- testSmaup(865, 90, 0.801)
+	================================
+	Statistic M = 0.366546071907841 
+	Pseudo p_value < 0.05 **
+	H0 is rejected
+	================================
 
 ### Python Users
    			   
-In [1]: N = 865
-   ...:	k = 90 
-   ...:	rhoEst = 0.801
-   ...: Smaup = testSmaup(N, k, rhoEst) ### Alternative: Smaup <- testSmaup(865, 90, 0.801)
-====================================
-Statistic M =  0.3665460719078407
-Pseudo p-value < 0.05 **
-H0 is rejected
-====================================
+	In [1]: N = 865
+	   ...:	k = 90 
+	   ...:	rhoEst = 0.801
+	   ...: Smaup = testSmaup(N, k, rhoEst) ### Alternative: Smaup <- testSmaup(865, 90, 0.801)
+	====================================
+	Statistic M =  0.3665460719078407
+	Pseudo p-value < 0.05 **
+	H0 is rejected
+	====================================
 
